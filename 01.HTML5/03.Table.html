@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="margin-left:100px;">
+    <h1>테이블</h1>
+    <hr>
+    <table border="1" style="width: 200px;">
+        <thead>
+            <tr>
+                <th>이름</th> <th>점수</th><th>비고</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>조성근</td> <td>84</td><td rowspan="3">줄 단위 병합</td>
+            </tr>
+            <tr>
+                <td>조성근</td> <td>90</td>
+                <tr>
+                    <td colspan="2">병합</td>
+                </tr>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

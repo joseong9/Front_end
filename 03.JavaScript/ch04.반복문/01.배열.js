@@ -10,9 +10,9 @@ array.push('push');
 //console.log(array.toString());
 
 //기본 for-loop
-for (let i=0; i < array.length; i++) {//초기값, 조건, 증감분
-    console.log(i, array[i]);
-}
+//for (let i=0; i < array.length; i++) {//초기값, 조건, 증감분
+//    console.log(i, array[i]);
+//}
 
 //Enhanced for-loop
 for (let item of array) {

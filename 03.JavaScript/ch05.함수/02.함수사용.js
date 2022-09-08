@@ -1,4 +1,3 @@
-
 function getDivisors(num) {
     let divisors = [];
     for (let k=1; k<num; k++) {

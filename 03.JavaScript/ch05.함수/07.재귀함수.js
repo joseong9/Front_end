@@ -12,7 +12,7 @@ function factorial(n) {
 }
 console.log(`10!은 ${factorial(10)}입니다`)
 
-//fibonacci
+//fibonacci 함수
 function fibo(n) {
     if (n == 0 || n == 1)
         return 1;

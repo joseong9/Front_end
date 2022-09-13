@@ -30,15 +30,30 @@ for (let i=1; i<array.length; i++) {
 }
 console.log(maxVal, maxIdx);
 
-let maxPal = 0, maxI=0, maxK=0
-for (let i = 100; i<=999; i++) {
-    for (let k =i; k<=999; k++) {
+// let maxPal = 0, maxI=0, maxK=0
+// for (let i = 100; i<=999; i++) {
+//     for (let k =i; k<=999; k++) {
+//         let product = i*k;
+//         if (isPalindrome(String(product))) {
+//             if (product > maxPal) {
+//                 maxPal = product;
+//                 maxI=i;
+//                 maxK=k
+//             }
+//         }
+//     }
+// }
+// console.log(`${maxI} x ${maxK} = ${maxPal}`)
+
+maxPal =0, maxI=0, maxK=0
+for (let i = 1000; i<=9999; i++) {
+    for (let k=i; k<=9999; k++) {
         let product = i*k;
         if (isPalindrome(String(product))) {
             if (product > maxPal) {
                 maxPal = product;
-                maxI=i;
-                maxK=k
+                maxI = i;
+                maxK = k
             }
         }
     }

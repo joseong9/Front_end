@@ -1,5 +1,5 @@
 //Palindrome
-//세자리 정수 두개를 곱한 결과가 palidrome 일때
+//세자리 정수 두개를 곱한 결과가 palindrome 일때
 //가장 큰 수와 그때 두개의 정수는?
 
 // 문자열을 거꾸로 만드는 함수
@@ -29,3 +29,18 @@ for (let i=1; i<array.length; i++) {
     }
 }
 console.log(maxVal, maxIdx);
+
+let maxPal = 0, maxI=0, maxK=0
+for (let i = 100; i<=999; i++) {
+    for (let k =i; k<=999; k++) {
+        let product = i*k;
+        if (isPalindrome(String(product))) {
+            if (product > maxPal) {
+                maxPal = product;
+                maxI=i;
+                maxK=k
+            }
+        }
+    }
+}
+console.log(`${maxI} x ${maxK} = ${maxPal}`)

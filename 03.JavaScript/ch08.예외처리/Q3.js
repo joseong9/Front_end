@@ -2,8 +2,6 @@
 // let j = Math.floor((Math.random()*89)+11);
 let number = Math.floor((Math.random()*89)+11);
 let number1 = Math.floor((Math.random()*89)+11);
-let index = 1;
-let count = 0;
 let countls = new Set();
 
 console.log(number,number1);

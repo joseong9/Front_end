@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script>
+        // $(document).ready(function() {
+        //     $('#fruits').find('.national').css('backgroundColor','green');
+        //     $('#food').find('.foreign').css('backgroundColor', 'yellow');
+        //     $('#.foreign').css('backgroundColor', 'beige');
+        // })
+        window.onload = function() {
+            const lis = document.querySelectorAll('.foreign');
+            for (let li of lis) {
+                li.style.backgroundColor = 'red';
+            }
+        }
+    </script>
+</head>
+<body style="margin: 50px;">
+    <ul id="fruits"> 내가 좋아하는 과일
+        <li class="national">사과</li>
+        <li class="national">감</li>
+        <li class="foreign">바나나</li>
+        <li class="foreign">파인애플</li>
+    </ul>
+    <hr>
+    <ul id="food"> 내가 좋아하는 음식
+        <li class="national">김치</li>
+        <li class="national">갈비</li>
+        <li class="foreign">스파게티</li>
+    </ul>
+</body>
+</html>

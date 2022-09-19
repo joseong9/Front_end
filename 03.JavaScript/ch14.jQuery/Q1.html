@@ -67,7 +67,7 @@
         </div>
         <script>
             let count = 3;
-            const show = document.getElementById('show');
+            const show = $('#show');
             function disp(num) {
                 const img = document.createElement('img');
                 img.setAttribute('src', 'digits/'+num+'.svg');
@@ -79,7 +79,8 @@
                 show.appendChild(img);
             }
             function hide() {
-                const sec = document.getElementById('second');
+                
+                const sec = $('#second');
                 show.removeChild(sec);
             }
             function countDown() {
